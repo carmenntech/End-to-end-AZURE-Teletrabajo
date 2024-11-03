@@ -1,0 +1,17 @@
+[
+	{
+	"sourceURL":"https://datos.madrid.es/egob/catalogo/300709-3-estudio-mayores-amigable.xlsx",
+	"sinkFileName":"EstudioCiudadesAmigables2024_Cuestionario1.xlsx"
+	},
+
+	{
+	"sourceURL":"https://datos.madrid.es/egob/catalogo/300709-5-estudio-mayores-amigable.xlsx",
+	"sinkFileName":"EstudioCiudadesAmigables2024_Cuestionario3.xlsx"
+	},
+
+	{
+	"sourceURL":"https://datos.madrid.es/egob/catalogo/300709-4-estudio-mayores-amigable.xlsx",
+	"sinkFileName":"EstudioCiudadesAmigables2024_Cuestionario2.xlsx"
+	}
+
+]
