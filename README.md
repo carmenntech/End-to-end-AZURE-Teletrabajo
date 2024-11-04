@@ -12,3 +12,32 @@ Despues creamos un dataset con el csv de la plataforma (tambien de tipo http)
 Creamos un storage acount de tipo data lake gen 2 y creamos su linked service, despues procedemos a crear un nuevo dataset de tipo data lake
 
 ![image](https://github.com/user-attachments/assets/ea8c9801-b3b3-45a5-86bb-d07feca5e222)
+
+---------------------------------------------------------------------------------------
+
+Creamos dos parametros, uno para la url y otro para el nombre del fichero
+
+![image](https://github.com/user-attachments/assets/15a20af0-c630-4f17-8539-25482b94b418)
+
+Creamos un data lake gen 2, y dentro de el un contenedor 'config' donde cargaremos el json
+
+![image](https://github.com/user-attachments/assets/70323aea-d6c9-4dc0-8d5c-5253c4fbc6ca)
+
+Dataset > Crear nuevo dataset > Azure blob storage > json > seleccionar el json 
+
+
+
+![image](https://github.com/user-attachments/assets/14d01161-62b3-490c-83d5-d190514129e6)
+
+for each > check secuencial > Contenido dinamico > @activity('Lookup1').output.value
+
+![image](https://github.com/user-attachments/assets/e102059d-c60d-4d17-8413-2bcf130a56f7)
+
+
+
+
+
+
+
+
+
