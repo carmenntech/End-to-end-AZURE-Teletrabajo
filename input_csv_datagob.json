@@ -1,17 +1,21 @@
 [
 	{
-	"sourceURL":"https://datos.madrid.es/egob/catalogo/300709-3-estudio-mayores-amigable.xlsx",
-	"sinkFileName":"EstudioCiudadesAmigables2024_Cuestionario1.xlsx"
+	"sourceURL":"https://www.ine.es/jaxi/files/tpx/csv_bdsc/50160.csv",
+	"sinkFileName":"50160.csv"
 	},
 
 	{
-	"sourceURL":"https://datos.madrid.es/egob/catalogo/300709-5-estudio-mayores-amigable.xlsx",
-	"sinkFileName":"EstudioCiudadesAmigables2024_Cuestionario3.xlsx"
+	"sourceURL":"https://www.ine.es/jaxi/files/tpx/csv_bdsc/50154.csv",
+	"sinkFileName":"50154.csv"
 	},
 
 	{
-	"sourceURL":"https://datos.madrid.es/egob/catalogo/300709-4-estudio-mayores-amigable.xlsx",
-	"sinkFileName":"EstudioCiudadesAmigables2024_Cuestionario2.xlsx"
+	"sourceURL":"https://www.ine.es/jaxi/files/tpx/csv_bdsc/50077.csv",
+	"sinkFileName":"50077.csv"
+	},
+	{
+	"sourceURL":"https://www.ine.es/jaxi/files/tpx/csv_bdsc/71035.csv",
+	"sinkFileName":"71035.csv"
 	}
 
 ]
