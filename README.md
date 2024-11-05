@@ -1,4 +1,14 @@
 
+### Extraccion de los datos de datagob 
+
+https://datos.gob.es/es/catalogo/ea0010587-porcentaje-de-la-jornada-laboral-detallada-por-dias-realizada-actualmente-en-modalidad-de-teletrabajo-por-tipo-de-trabajo-segun-su-disponibilidad-para-el-teletrabajo-total-o-parcial-identificador-api-t25-p450-base_2011-a2021-l0-04061-px1
+
+https://datos.gob.es/es/catalogo/ea0010587-posibilidad-de-teletrabajar-y-teletrabajo-efectivo-de-forma-total-o-parcial-por-caracteristicas-demograficas-identificador-api-t25-p450-base_2011-a2021-l0-04055-px1
+
+https://datos.gob.es/es/catalogo/ea0010587-ventajas-y-desventajas-declaradas-sobre-el-teletrabajo-por-comunidades-y-ciudades-autonomas-identificador-api-t25-p450-base_2011-a2021-l0-08042-px1
+
+https://datos.gob.es/es/catalogo/ea0010587-acceso-remoto-reuniones-a-traves-de-internet-y-teletrabajo-identificador-api-tpx-cienciaytecn_2981-eticce-a2023_a2024_11941-2ca_11949-1cag_11950-l0-cag04-px
+
 ## Paso a paso del proyecto
 
 ### opcion 1
