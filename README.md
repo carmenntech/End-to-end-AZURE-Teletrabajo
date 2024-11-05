@@ -1,5 +1,35 @@
 
-### Extraccion de los datos de datagob 
+# Análisis de datos sobre el teletrabajo mediante Azure ETL
+
+## Descripción general
+
+Este proyecto se centra en el desarrollo de un extenso pipeline de extracción, transformación y carga (ETL) que utiliza las capacidades avanzadas de Microsoft Azure. El pipeline recupera de manera eficiente los datos de la api de datagob para almacenarlos en Azure Blob Storage, las transformaciones necesarias se realizan mediante Azure Databricks (Pyspark) y Azure Data Factory, y los almacena en Azure Data Lake. Los datos analizados finales se almacenan de forma segura en una capa SQL para su uso posterior. Por ultimo se usa Power bi para la visualizacion final de los datos.
+
+## Data flow:
+
+1. **Extraer datos**: Recupera datos mediante http a la api de datagob para procesarlos y cargarlos en Azure Data Lake Storage Gen-2
+2. **Transformar datos** : Utiliza PySpark en Azure Databricks para analizar y procesar los datos, almacenando los resultados en Azure Data Lake Storage Gen2
+3. **Cargar datos** : Transfiere los datos procesados ​​a una base de datos SQL de Azure para establecer una capa de informes para la creación de paneles
+4. **Automatizacion**: Construye pipelines de extremo a extremo en Azure Data Factory para automatizar el flujo de datos desde la extracción hasta las capas de informes
+
+
+## Prerrequisitos
+
+- __Suscripción__ a Microsoft Azure
+- __Azure Blob Storage__ : un servicio que proporciona almacenamiento de objetos escalable para grandes cantidades de datos no estructurados, ideal para almacenar imágenes, vídeos y otros datos binarios.
+Almacenamiento de Azure Data Lake Gen2 : una solución de almacenamiento altamente escalable diseñada específicamente para análisis de big data, que combina las capacidades de Azure Blob Storage y Azure Data Lake.
+- __Azure Databricks__ : una plataforma de análisis avanzada basada en Apache Spark, diseñada para el procesamiento de big data, aprendizaje automático y proyectos colaborativos de ciencia de datos.
+- __Azure SQL Server__ : un servicio de base de datos relacional totalmente administrado que utiliza el motor de SQL Server para proporcionar almacenamiento y procesamiento de datos confiables y de alto rendimiento.
+- __Base de datos SQL de Azure__ : un servicio de base de datos relacional administrado que ofrece compatibilidad con el motor de SQL Server y proporciona soluciones de bases de datos escalables y seguras para aplicaciones modernas.
+- __Azure Data Factory__ : un servicio integral de integración de datos que permite la creación, programación y orquestación de flujos de trabajo ETL (Extracción, Transformación, Carga) y ELT (Extracción, Carga, Transformación), con una interfaz visualmente intuitiva para crear flujos de trabajo basados ​​en datos para mover y transformar datos a escala.
+
+## Conjunto de datos 
+
+El conjunto de datos utilizado en este proyecto contiene información detallada sobre el teletrabajo en España; las ventajas y desventajas de este modelo de trabajo, porcentaje de personas teletrabajadoras por comunidad autonoma, sexo, actividad... 
+
+# Paso a paso del proyecto
+
+## Extraccion de los datos de datagob y almacenamiento en Data Lake
 
 https://datos.gob.es/es/catalogo/ea0010587-porcentaje-de-la-jornada-laboral-detallada-por-dias-realizada-actualmente-en-modalidad-de-teletrabajo-por-tipo-de-trabajo-segun-su-disponibilidad-para-el-teletrabajo-total-o-parcial-identificador-api-t25-p450-base_2011-a2021-l0-04061-px1
 
