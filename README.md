@@ -68,7 +68,7 @@ Origen de los datos:
 
 ![image](https://github.com/user-attachments/assets/1ef3bf9e-0dac-49dd-ae2f-9e07f6bbf2f0)
 
-6. Vamos al apartado de pipelines > nuevo pipeline > nueva variable a nivel de pipeline > crear actividad de copia de http a storage
+6. Vamos al apartado de pipelines > nuevo pipeline  > crear actividad de copia de http a storage
 
 ![image](https://github.com/user-attachments/assets/9ae3528a-3bb3-43fe-b90a-704eced75472)
 
