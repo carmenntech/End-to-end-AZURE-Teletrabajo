@@ -27,17 +27,21 @@ Almacenamiento de Azure Data Lake Gen2 : una solución de almacenamiento altamen
 
 El conjunto de datos utilizado en este proyecto contiene información detallada sobre el teletrabajo en España; las ventajas y desventajas de este modelo de trabajo, porcentaje de personas teletrabajadoras por comunidad autonoma, sexo, actividad... 
 
+Origen de los datos:
+
+| URL  | URL API Datagob |
+| ------------- | ------------- |
+| https://datos.gob.es/es/catalogo/ea0010587-porcentaje-de-la-jornada-laboral-detallada-por-dias-realizada-actualmente-en-modalidad-de-teletrabajo-por-tipo-de-trabajo-segun-su-disponibilidad-para-el-teletrabajo-total-o-parcial-identificador-api-t25-p450-base_2011-a2021-l0-04061-px1)  | https://www.ine.es/jaxi/files/tpx/csv_bdsc/50160.csv |
+|https://datos.gob.es/es/catalogo/ea0010587-posibilidad-de-teletrabajar-y-teletrabajo-efectivo-de-forma-total-o-parcial-por-caracteristicas-demograficas-identificador-api-t25-p450-base_2011-a2021-l0-04055-px1|https://www.ine.es/jaxi/files/tpx/csv_bdsc/50154.csv|
+|https://datos.gob.es/es/catalogo/ea0010587-ventajas-y-desventajas-declaradas-sobre-el-teletrabajo-por-comunidades-y-ciudades-autonomas-identificador-api-t25-p450-base_2011-a2021-l0-08042-px1|https://www.ine.es/jaxi/files/tpx/csv_bdsc/50077.csv|
+|https://datos.gob.es/es/catalogo/ea0010587-acceso-remoto-reuniones-a-traves-de-internet-y-teletrabajo-identificador-api-tpx-cienciaytecn_2981-eticce-a2023_a2024_11941-2ca_11949-1cag_11950-l0-cag04-px|https://www.ine.es/jaxi/files/tpx/csv_bdsc/71035.csv|
+
 # Paso a paso del proyecto
 
 ## Extraccion de los datos de datagob y almacenamiento en Data Lake
 
-https://datos.gob.es/es/catalogo/ea0010587-porcentaje-de-la-jornada-laboral-detallada-por-dias-realizada-actualmente-en-modalidad-de-teletrabajo-por-tipo-de-trabajo-segun-su-disponibilidad-para-el-teletrabajo-total-o-parcial-identificador-api-t25-p450-base_2011-a2021-l0-04061-px1
-
-https://datos.gob.es/es/catalogo/ea0010587-posibilidad-de-teletrabajar-y-teletrabajo-efectivo-de-forma-total-o-parcial-por-caracteristicas-demograficas-identificador-api-t25-p450-base_2011-a2021-l0-04055-px1
-
-https://datos.gob.es/es/catalogo/ea0010587-ventajas-y-desventajas-declaradas-sobre-el-teletrabajo-por-comunidades-y-ciudades-autonomas-identificador-api-t25-p450-base_2011-a2021-l0-08042-px1
-
-https://datos.gob.es/es/catalogo/ea0010587-acceso-remoto-reuniones-a-traves-de-internet-y-teletrabajo-identificador-api-tpx-cienciaytecn_2981-eticce-a2023_a2024_11941-2ca_11949-1cag_11950-l0-cag04-px
+1. Crear link service de tipo http > ponemos el link base a la api de datagob (https://www.ine.es/)
+2. Creamos un dataset de tipo http, creamos un parametro 
 
 ## Paso a paso del proyecto
 
