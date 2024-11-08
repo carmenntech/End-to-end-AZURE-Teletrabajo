@@ -1,0 +1,25 @@
+{
+    "name": "dfdatagob",
+    "id": "/subscriptions/3d7f8008-5d69-49cb-94ae-a63b6acfe0ae/resourceGroups/grupocarmen/providers/Microsoft.DataFactory/factories/dfdatagob",
+    "type": "Microsoft.DataFactory/factories",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "createTime": "2024-11-08T13:00:01.2370114Z",
+        "version": "2018-06-01",
+        "factoryStatistics": {
+            "totalResourceCount": 0,
+            "maxAllowedResourceCount": 0,
+            "factorySizeInGbUnits": 0,
+            "maxAllowedFactorySizeInGbUnits": 0
+        },
+        "publicNetworkAccess": "Enabled"
+    },
+    "eTag": "\"78012da0-0000-0100-0000-672e0b510000\"",
+    "location": "eastus",
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "07f60d7d-7fbd-43b2-ad78-1651cf4ba4bb",
+        "tenantId": "cb561bac-8eae-4e86-979a-765c514af3ae"
+    },
+    "tags": {}
+}

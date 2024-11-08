@@ -1,0 +1,72 @@
+{
+    "sku": {
+        "name": "Standard_RAGRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/3d7f8008-5d69-49cb-94ae-a63b6acfe0ae/resourceGroups/grupocarmen/providers/Microsoft.Storage/storageAccounts/storagecarmenlake",
+    "name": "storagecarmenlake",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-11-08T13:39:51.6900652Z",
+            "key2": "2024-11-08T13:39:51.6900652Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "largeFileSharesState": "Enabled",
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-11-08T13:39:51.6900652Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-11-08T13:39:51.6900652Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-11-08T13:39:51.5494408Z",
+        "primaryEndpoints": {
+            "dfs": "https://storagecarmenlake.dfs.core.windows.net/",
+            "web": "https://storagecarmenlake.z13.web.core.windows.net/",
+            "blob": "https://storagecarmenlake.blob.core.windows.net/",
+            "queue": "https://storagecarmenlake.queue.core.windows.net/",
+            "table": "https://storagecarmenlake.table.core.windows.net/",
+            "file": "https://storagecarmenlake.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "westus",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://storagecarmenlake-secondary.dfs.core.windows.net/",
+            "web": "https://storagecarmenlake-secondary.z13.web.core.windows.net/",
+            "blob": "https://storagecarmenlake-secondary.blob.core.windows.net/",
+            "queue": "https://storagecarmenlake-secondary.queue.core.windows.net/",
+            "table": "https://storagecarmenlake-secondary.table.core.windows.net/"
+        }
+    }
+}
