@@ -8,6 +8,8 @@ Este proyecto se centra en el desarrollo de un extenso pipeline de extracción, 
 ## Data flow:
 
 1. **Extraer datos**: Recupera datos mediante http a la api de datagob para procesarlos y cargarlos en Azure Data Lake Storage Gen-2
+![image](https://github.com/user-attachments/assets/e6cd5a35-5fb8-4f81-a8fb-90e923a0caa9)
+
 2. **Transformar datos** : Utiliza PySpark en Azure Databricks para analizar y procesar los datos, almacenando los resultados en Azure Data Lake Storage Gen2
 3. **Cargar datos** : Transfiere los datos procesados ​​a una base de datos SQL de Azure para establecer una capa de informes para la creación de paneles
 4. **Automatizacion**: Construye pipelines de extremo a extremo en Azure Data Factory para automatizar el flujo de datos desde la extracción hasta las capas de informes
@@ -72,10 +74,19 @@ Origen de los datos:
 
 7. Crear dataset con json guardado en el storage
 
+![image](https://github.com/user-attachments/assets/4d36a126-b8f0-4ac6-aab3-4fd4d6818847)
+
+
 8. Lookup > check recursividad y quitar el check de  solo la primera fila 
 
+![image](https://github.com/user-attachments/assets/25abea94-0218-4760-a6d7-bf45a804dcea)
 
+9. ForEach > chech recursividad, elemento: @activity('lookup').output.value
+  ![image](https://github.com/user-attachments/assets/49e3a782-22e4-4e23-a8dd-913332db7fd4)
 
+11. Dentro del ForEach copiamos la actividad de copia y cambiamos el parametro creado por @item.sourceURL
+
+![image](https://github.com/user-attachments/assets/8fc61f4a-105e-4003-9a0e-b8c4ed4435d3)
 
 
 
