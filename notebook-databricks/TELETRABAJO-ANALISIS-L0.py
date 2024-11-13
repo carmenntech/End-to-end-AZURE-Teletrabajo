@@ -59,5 +59,27 @@ df.groupBy('ccaa').count().display()
 
 # COMMAND ----------
 
-# MAGIC %md
-# MAGIC Pivotamos por la columna de ccaa 
+pivot_df = df.groupBy("ccaa").pivot("sectores").agg({"porcentaje": "first"}).show()
+
+# COMMAND ----------
+
+Creamos la delta table
+
+# COMMAND ----------
+
+spark.sql("CREATE DATABASE IF NOT EXISTS teletrabajodb")
+spark.sql("USE teletrabajodb")
+
+spark.sql(f"""
+CREATE TABLE IF NOT EXISTS teletrabajo_sectores_ccaa(
+    ccaa string,
+    variables string,
+    sectores string,
+    porcentaje float
+)
+USING DELTA
+LOCATION '{teletrabajo_sectores_ccaa}'
+""")
+
+teletrabajodb.write.format("delta").mode("overwrite").save(teletrabajo_sectores_ccaa)
+
